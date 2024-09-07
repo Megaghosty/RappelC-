@@ -1,6 +1,6 @@
 /*****************************************************************//**
  * \file   main.cpp
- * \brief Assignation de mission à une entreprise
+ * \brief Assignation de mission ï¿½ une entreprise
  *
  * \author Megaghosty
  * \date   Septembre 2024
@@ -8,23 +8,23 @@
 
 
 #include <iostream>
-#include "entreprise.h"
+#include "Entreprise.h"
 #include "mission.h"
 
 int main() {
 
-    Entreprise id("NASA", "Cap canaveral");
+    Entreprise entreprise("NASA", "Cap canaveral");
 
 
-    Mission mission1;
-    mission1.setDescription("Make a rocketship");
-    mission1.setNombredepersonne(20000);
-    mission1.setNbHeures(140400);
+    Mission objectif;
+    objectif.setDescription("Make a rocketship");
+    objectif.setNombredepersonne(20000);
+    objectif.setNbHeures(140400);
 
 
-    id.assignMission(mission1);
+    entreprise.assignMission(objectif);
 
-        id.printMissionDetails();
+        entreprise.printMissionDetails();
 
     return 0;
 }
